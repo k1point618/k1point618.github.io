@@ -17,22 +17,24 @@ a {
   height:250px;
   width:75%;
 }
-#links {
+#sections {
   position:relative;
   top:100px;
   left:100px;
+  height:80px;
+  line-height: 50px;
   width:75%;
 }
-#links ul {
+#sections ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-#links ul li { display: inline; }
-#links ul li a { 
+#sections ul li { display: inline; }
+#sections ul li a { 
   padding: .2em 1em 0em 0em;
 }
-#links ul li a:hover{
+#sections ul li a:hover{
   text-decoration: underline;
   cursor: pointer;
 }
@@ -48,7 +50,7 @@ a {
   left:100px;
   width: 75%;
   left: 100px;
-  font-family: arial;
+  font-family: 'Open Sans', sans-serif;
   font-size:12pt;
   color:#333;
 }
@@ -63,6 +65,7 @@ a {
 }
 .social-footer {
   font-size:30px;
+  line-height: 30px
 }
 #icons {
   position:relative;
