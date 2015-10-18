@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>Keren Gu</title>
+
+	<!-- Load style sheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+	<link href='http://fonts.googleapis.com/css?family=Wire+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<!-- Load Javascript -->
+	<script type="text/javascript" src="js/external_js/jquery-1.9.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.link-title').click(function(){
+				$('.link-content').children().css("display", "none");
+				$('.link-title').removeClass("current");
+
+				var link_name = $(this).attr('id');
+				$('#'+link_name+'-content').css("display", "block");
+				$('#' + link_name).addClass("current");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class='home'>
+		<div id="myname">
+			<img id="profile" src="img/profile.png"><a id='chinese-name'> ：</a> Keren Gu <a id='chinese-name'> ： 古可人</a>
+		</div>
+		<div id="links">
+			<ul>
+				<li><a class='link-title current' id='about'>About</a></li>
+				<li><a class='link-title' id='research'>Research</a></li>
+				<li><a class='link-title' id='projects'>Projects</a></li>
+				<li><a class='link-title' id='blog'>Blog</a></li>
+			</ul>
+			<br/>
+			<br/>
+		</div>
+		<div class="link-content">
+			<div id="about-content" style="display:block;">
+				<p>I am a Masters of Engineering candidate at MIT working with Prof. Julie Shah at the <a href='http://interactive.mit.edu/' target="_blank"> Interactive Robotics Group </a> in <a href='https://www.csail.mit.edu/' target="_blank">CSAIL</a>. </p>
+				</br>
+				<p>My research includes applying existing frameworks that learn hierarchical structures from real-world demonstrations to multi-agent, team collaboration, environments. I'm excited about this area of research for two main reasons: first, I get to experiment with hierarchical graphical models (which in itself is exciting!), and second, obtaining this type of hierarchical task knowledge will improve robot's ability to work in a team environment!</p>
+				</br>
+				<p>Prior to being a graduate student, I finished my undergraduate at MIT with degrees in mathematics and computer science. </p>
+			</div>
+
+			<div id="research-content" style="display:none;">
+				<h4>2015</h4>
+				<p> More details on my current research coming soon.</p>
+				</br>
+				<h4>2014 and prior</h4>
+				<p> As part of MIT's <a href='http://web.mit.edu/urop/' target="_blank"> Undergraduate Research Opportunities Program (UROP) </a>, I joined the Interactive Robotics Group to work on an implementation of the inverse reinforcement learning algorithm[1] as part of a framework to efficiently learn human preferences in human-robot collaborative tasks. The priliminary work was presented my mentor, Stefanos Nikolaidis, at AAAI's 2014 AI-HRI Fall Symposium in Washington DC.</p>
+			</div>
+
+			<div id="projects-content" style="display:none;">
+				<p> More details on my previous projects coming soon. For now, feel free to dig around my <a href='https://www.github.com/k1point618' target="_blank">github</a> .</p>
+			</div>
+
+			<div id="blog-content" style="display:none;">
+				<p> It's been a while since I've done any blogging, but nonetheless, here are my latest thoughts from early 2013: <a href='http://kerengu.wordpress.com/' target="_blank">Keren's Wordpress</a> </p>
+			</div>
+
+		</div>
+		</br>
+		<div id="icons">
+			<p class='social-footer'>
+				<a href='https://www.github.com/k1point618' target="_blank">github</a> 
+				&nbsp &nbsp &nbsp 
+				<a href='https://www.facebook.com/kerengu' target="_blank">facebook</a> 
+				&nbsp &nbsp &nbsp 
+				<a href='https://twitter.com/KerenGu' target="_blank">twitter</a>
+				&nbsp &nbsp &nbsp 
+				<a href='https://www.linkedin.com/pub/keren-gu/25/852/6ba' target="_blank">linkedin</a>
+				&nbsp &nbsp &nbsp 
+				<a href='https://google.com/+KerenGu/' target="_blank">google+</a>
+				&nbsp &nbsp &nbsp 
+				<a href='https://www.flickr.com/photos/128122158@N08/' target="_blank">flickr</a>
+				&nbsp &nbsp &nbsp 
+				<a href='mailto:kgu@mit.edu' target="_blank">kgu [at] mit</a>
+				
+			</p>
+		</div>
+
+		 <div id="footer" align="right">
+			<p>Updated November, 2014</p>
+		</div>
+	</div>
+	
+</body>
+<html>
