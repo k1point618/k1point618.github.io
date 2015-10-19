@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>Keren Gu</title>
+
+	<!-- Load style sheets -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/blog.css" />
+    <link rel="icon" type="image/png" href="../img/favicon.ico">
+	<link href='http://fonts.googleapis.com/css?family=Wire+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<!-- Load Javascript -->
+	<script type="text/javascript" src="../js/external_js/jquery-1.9.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.link-title').click(function(){
+				$('.link-content').children().css("display", "none");
+				$('.link-title').removeClass("current");
+
+				var link_name = $(this).attr('id');
+				$('#'+link_name+'-content').css("display", "block");
+				$('#' + link_name).addClass("current");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class='home'>
+		<div id="title">
+			Keren and Words about Math, Computer Science, the Color Purple, and Unicorns.
+		</div>
+		</br>
+		<div id="icons">
+			<!-- <p class='social-footer'>
+				<a href='https://www.github.com/k1point618' target="_blank">github</a> 
+				&nbsp &nbsp &nbsp 
+				<a href='https://www.facebook.com/kerengu' target="_blank">facebook</a> 
+				&nbsp &nbsp &nbsp 
+				<a href='https://twitter.com/KerenGu' target="_blank">twitter</a>
+				&nbsp &nbsp &nbsp 
+				<a href='https://www.linkedin.com/pub/keren-gu/25/852/6ba' target="_blank">linkedin</a>
+				&nbsp &nbsp &nbsp 
+				<a href='https://google.com/+KerenGu/' target="_blank">google+</a>
+				&nbsp &nbsp &nbsp 
+				<a href='https://www.flickr.com/photos/128122158@N08/' target="_blank">flickr</a>
+				&nbsp &nbsp &nbsp 
+				<a href='mailto:kgu@mit.edu' target="_blank">kgu [at] mit</a>
+				&nbsp &nbsp &nbsp 
+				<a href='mailto:keren@siftscience.com' target="_blank">keren [at] siftscience</a>
+				
+			</p> -->
+		</div>
+
+		 <!-- <div id="footer" align="right">
+			<p>Updated October, 2015</p>
+		</div> -->
+	</div>
+	
+</body>
+<html>
