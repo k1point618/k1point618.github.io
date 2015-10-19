@@ -17,10 +17,12 @@
 	<script>
 		$(document).ready(function(){
 			$('.link-title').click(function(){
+				var link_name = $(this).attr('id');
+				if (link_name == 'blog')
+					return;
 				$('.link-content').children().css("display", "none");
 				$('.link-title').removeClass("current");
 
-				var link_name = $(this).attr('id');
 				$('#'+link_name+'-content').css("display", "block");
 				$('#' + link_name).addClass("current");
 			});
@@ -38,7 +40,7 @@
 				<li><a class='link-title current' id='about'>About</a></li>
 				<li><a class='link-title' id='research'>Research</a></li>
 				<li><a class='link-title' id='projects'>Projects</a></li>
-				<li><a class='link-title' id='blog'>Blog</a></li>
+				<li><a class='link-title' id='blog' href='blog/'>Blog</a></li>
 			</ul>
 			<br/>
 			<br/>
